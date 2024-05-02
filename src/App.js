@@ -1,4 +1,5 @@
 import "./App.css";
+import './static/saas/App.scss'
 import React from "react";
 import { Title } from "./components/texts/Title";
 import { SubHeader } from "./components/elements/SubHeader";

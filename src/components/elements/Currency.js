@@ -28,10 +28,10 @@ export function Currency({ currency, handleCurrencyChange }) {
       }}
       onChange={(selectedOption) => handleCurrencyChange(selectedOption.value)}
       styles={{
-        control: (provided, state) => ({
+        control: (provided) => ({
           ...provided,
-          width: "250px", // Dostosuj szerokość pola wyboru
-          height: "75px", // Dostosuj wysokość pola wyboru
+          width: "250px",
+          height: "75px", 
           padding: "10px",
           borderRadius: "5px",
           margin: "10px",
@@ -43,11 +43,12 @@ export function Currency({ currency, handleCurrencyChange }) {
         option: (provided, state) => ({
           ...provided,
           borderBottom: "1px solid #ccc",
-          color: state.isSelected ? "#000000" : "#8c8c8c", // Kolor opcji gdy jest zaznaczona lub niezaznaczona
-          backgroundColor: state.isFocused ? "#ddd" : "white", // Tło opcji gdy jest zaznaczona lub niezaznaczona
+          color: state.isSelected ? "#000000" : "#8c8c8c", 
+          backgroundColor: state.isFocused ? "#ddd" : "white", 
 
           fontSize: "12px",
         }),
-      }} />
+      }}
+    />
   );
 }

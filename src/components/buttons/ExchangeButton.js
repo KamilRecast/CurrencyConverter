@@ -1,7 +1,9 @@
 import React from "react";
 
 export function ExchangeButton({
-  mainCurrency, exchangedCurrency, handleCurrencyChange,
+  mainCurrency,
+  exchangedCurrency,
+  handleCurrencyChange,
 }) {
   const handleSwap = () => {
     handleCurrencyChange(exchangedCurrency, mainCurrency);

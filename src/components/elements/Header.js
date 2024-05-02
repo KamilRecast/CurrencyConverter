@@ -1,4 +1,4 @@
-import logo from "../../Logo/png/logo-no-background.png";
+import logo from "../../static/logo/png/logo-no-background.png";
 import React from "react";
 
 export function Header() {
