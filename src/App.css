@@ -126,17 +126,17 @@ border-radius: 5px;
 }
 
 .App-currency {
-  padding: 10px;
   width: 250px;
+  padding: 10px;
   height:50px;
   border-radius: 5px;
   margin: 10px;
   background-color: #fff;
   font-size: 12px;
+
   font-family: 'Bruno Ace', sans-serif;
-  box-sizing: content-box;
   text-align: left;
-  box-shadow: 1px 1px 2px 1px #8c8c8c;
+ 
 
 
 
@@ -164,7 +164,7 @@ text-align: center;
 
 .App-exchange-button {
   box-sizing: content-box;
-  padding: 10px;
+  margin:10px;
   width: 100px;
   background-color: #fff;
   height: 75px; /* Ustawienie wysokości przycisku */
@@ -180,7 +180,11 @@ text-align: center;
 }
 
 .App-exchange-button:hover {
-  transform: scale(1.1); /* Powiększenie przycisku przy najechaniu kursorem */
+  transform: scale(1.1);
+
+  font-size:25px;
+
+  /* Powiększenie przycisku przy najechaniu kursorem */
 }
 .exchange-icon {
   width: 50px; /* Ustawienie szerokości obrazka */
