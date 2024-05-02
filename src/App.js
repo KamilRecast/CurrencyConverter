@@ -1,18 +1,15 @@
 import "./App.css";
-import logo from "./Logo/png/logo-no-background.png";
 import React from "react";
 import { Title } from "./components/texts/Title";
 import { SubHeader } from "./components/elements/SubHeader";
 import { AppCalculator } from "./list/AppCalculator";
 import { AppRates } from "./list/AppRates";
-
+import { Header } from "./components/elements/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <Header />
       <SubHeader />
       <Title>Currency Converter</Title>
       <AppCalculator />
