@@ -80,20 +80,28 @@ export function AppCalculator() {
       </ExchangeInfo>
 
       <div className="App-exchange">
+        <div className="column">
         <Currency
           currency={mainCurrency}
           handleCurrencyChange={handleMainCurrencyChange} />
         <CurrencyInput input={mainInput} handleChange={handleMainInput} />
+        </div>
+        <div className="column">
+
         <ExchangeButton
           mainCurrency={mainCurrency}
           exchangedCurrency={exchangedCurrency}
           handleCurrencyChange={handleCurrencySwap} />{" "}
+          </div>
+                  <div className="column">
+
         <Currency
           currency={exchangedCurrency}
           handleCurrencyChange={handleExchangedCurrencyChange} />
         <CurrencyExchangedReadOnly
           input={exchangedInput}
           handleChange={handleExchangedInput} />
+          </div>
       </div>
       <ExchangeInfo>
         1 {mainCurrency} = {exchangeRate} {exchangedCurrency}, average rate from{" "}

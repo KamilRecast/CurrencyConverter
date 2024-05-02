@@ -5,4 +5,12 @@
     margin-left: 15vw;
   }
   
-  
+  @media (max-width: 1200px) {
+    .App-title {
+        font-size: 20px;
+        padding: 20px 0px 20px 0px;
+        color: #8c8c8c;
+        margin-left: 2.5%;
+      }
+      
+    }

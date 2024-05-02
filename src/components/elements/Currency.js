@@ -30,7 +30,7 @@ export function Currency({ currency, handleCurrencyChange }) {
       styles={{
         control: (provided) => ({
           ...provided,
-          width: "250px",
+          width: "350px",
           height: "75px", 
           padding: "10px",
           borderRadius: "5px",
