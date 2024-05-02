@@ -1,38 +1,217 @@
+@font-face {
+  font-family: 'Bruno Ace';
+  src: url('./Font/Bruno\ Ace.ttf') format('truetype');
+}
+
+
+
+
 .App {
-  text-align: center;
+
+  font-family: 'Bruno Ace', sans-serif;
+
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
+  width: 25vmin;
   pointer-events: none;
+  padding: 20px 0px 20px 0px;
+  margin-left: 15vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #444343
+  ;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.App-subheader{
+  background-color: #8c8c8c;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-subheader-info {
+  font-size: 10px;
+  text-align: center;
+}
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-calculator {
+  padding: 25px;
+  max-width: 70%;
+  margin-left: 15vw; /* Zachowanie marginesu po lewej */
+  box-shadow: 1px 1px 2px 1px #8c8c8c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.App-rates {
+  padding: 25px;
+  max-width: 70%;
+  margin-left: 15vw; /* Zachowanie marginesu po lewej */
+  box-shadow: 1px 1px 2px 1px #8c8c8c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5vh;
+
+}
+.App-exchange {
+  display: flex;
+  flex-direction: row;
+}
+.App-info {
+background-color:#ebeaea;
+padding:5px;
+border-radius: 5px;
+  text-align: left;
+  margin:10px;
+  font-size: 10px;
+  display:flex;
+  flex-direction: row;
+  margin-top:50px;
+}
+.App-info-span{
+  padding:10px;
+}
+
+
+
+.App-rates table {
+  width: 100%; /* Ustawienie tabeli na 100% szerokości */
+  border-collapse: collapse; /* Łączenie granic komórek */
+  justify-content: center;
+
+}
+
+.App-rates th {
+  width: 30%; /* Każdy nagłówek zajmuje 33% szerokości */
+  justify-content: center;
+  text-align: center;
+  color: #8c8c8c;
+  font-size: 20px;
+
+}
+.App-rates tr {
+  width: 30%; /* Każdy nagłówek zajmuje 33% szerokości */
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  height: 50px; /* Ustawienie wysokości wiersza na 50 pikseli */
+}
+
+
+.App-title {
+  font-size: 20px;
+  padding: 20px 0px 20px 0px;
+  color: #8c8c8c;
+  margin-left:15vw;
+}
+
+.App-currency {
+  padding: 10px;
+  width: 250px;
+  height:50px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #fff;
+  font-size: 12px;
+  font-family: 'Bruno Ace', sans-serif;
+  box-sizing: content-box;
+  text-align: left;
+  box-shadow: 1px 1px 2px 1px #8c8c8c;
+
+
+
+}
+
+
+.App-input {
+  padding: 10px;
+text-align: center;
+  width: 200px;
+  height:50px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #fff;
+  font-size: 10px;
+  font-family: 'Bruno Ace', sans-serif;
+  box-shadow: 1px 1px 2px 1px #8c8c8c;
+
+}
+.readonly {
+  background-color: #ebeaea;
+ 
+
+}
+
+.App-exchange-button {
+  box-sizing: content-box;
+  padding: 10px;
+  width: 100px;
+  background-color: #fff;
+  height: 75px; /* Ustawienie wysokości przycisku */
+  border: none;
+  margin: 10px;
+  display: flex; /* Dodanie flexbox */
+  align-items: center; /* Wyśrodkowanie w pionie */
+  justify-content: center; /* Wyśrodkowanie w poziomie */
+  font-size: 50px;
+  font-family: 'Bruno Ace', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s; /* Dodanie płynnego przejścia dla efektu hover */
+}
+
+.App-exchange-button:hover {
+  transform: scale(1.1); /* Powiększenie przycisku przy najechaniu kursorem */
+}
+.exchange-icon {
+  width: 50px; /* Ustawienie szerokości obrazka */
+  height: 50px; /* Ustawienie wysokości obrazka */
+  object-fit: cover; /* Wypełnienie obrazka w przycisku */
+}
+
+.App-exchange-info{
+  text-align:center;
+  color:#8c8c8c;
+  padding: 10px;
+}
+
+/* Dostosowanie paska przewijania w przeglądarce */
+::-webkit-scrollbar {
+  width: 10px; /* Szerokość paska przewijania */
+  background-color: #444343;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8c8c8c ; /* Kolor kciuka (przesuwającej się części paska) */
+  border-radius:50px;
+
+}
+
+
+/* Dostosowanie paska przewijania w przeglądarce Firefox */
+/* Niektóre starsze wersje Firefoksa mogą wymagać prefiksu -moz- */
+
+/* Szerokość paska przewijania */
+scrollbar-width: 10px;
+
+/* Kolor kciuka (przesuwającej się części paska) i tła paska */
+scrollbar-color: #8c8c8c white; /* Kolor kciuka i tła (kolejno) */
