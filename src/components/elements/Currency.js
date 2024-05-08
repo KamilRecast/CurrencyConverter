@@ -27,6 +27,7 @@ export function Currency({ currency, handleCurrencyChange }) {
         label: `${mainCurrencyFlag} (${currency}) ${mainCurrencyCountry}`,
       }}
       onChange={(selectedOption) => handleCurrencyChange(selectedOption.value)}
+      noOptionsMessage={() => "No Currency"}
       styles={{
         control: (provided) => ({
           ...provided,
